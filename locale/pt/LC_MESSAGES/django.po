@@ -1,0 +1,325 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-06 21:09+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: templates/base.html:8
+msgid "Home - Portfolio"
+msgstr ""
+
+#: templates/base.html:58
+msgid "Home"
+msgstr "Início"
+
+#: templates/base.html:61 templates/base.html:146
+msgid "Projects"
+msgstr "Projetos"
+
+#: templates/base.html:64 templates/base.html:271 templates/base.html:283
+msgid "Languages"
+msgstr "Idiomas"
+
+#: templates/base.html:67 templates/base.html:407
+msgid "About Me"
+msgstr "Sobre Mim"
+
+#: templates/base.html:70
+msgid "Contact"
+msgstr "Entre em contato"
+
+#: templates/base.html:107
+msgid "Matias Yurquina - Web Developer"
+msgstr "Matias Yurquina - Desenvolvedor"
+
+#: templates/base.html:108
+msgid ""
+"Programmer with studies at the National University of Tucuman - Argentina, "
+"with real experience in web development, Visual Basic, PostgreSQL database "
+"and more."
+msgstr ""
+"Programador com estudos na Universidade Nacional de Tucumán - Argentina, com "
+"experiência real em desenvolvimento web, Visual Basic, banco de dados "
+"PostgreSQL e muito mais."
+
+#: templates/base.html:150
+msgid "Brief overview of the projects I participated in"
+msgstr "Breve visão geral dos projetos dos quais participei"
+
+#: templates/base.html:164
+msgid "Bingo Control"
+msgstr "Controle de Bingo"
+
+#: templates/base.html:165
+msgid ""
+"This is a program made entirely by me, as its name indicates this small "
+"program is used to control if a bingo is ready to play or not."
+msgstr ""
+"Como o nome indica, esse pequeno programa é usado para controlar se um bingo "
+"está pronto para ser jogado ou não."
+
+#: templates/base.html:175
+msgid "Student Management System"
+msgstr "Sistema de Gerenciamento de Alunos"
+
+#: templates/base.html:176
+msgid ""
+"This system is used to control the academic status of each student, to "
+"register for exams, to register for subjects, etc."
+msgstr ""
+"Esse sistema é usado para controlar o status acadêmico de cada aluno, para "
+"se inscrever em exames, para se inscrever em disciplinas, etc."
+
+#: templates/base.html:186
+msgid "MotoCronos"
+msgstr "MotoCronos"
+
+#: templates/base.html:187
+msgid ""
+"MotoCronos is a simple and short program, which serves to time motorcycle "
+"and bicycle races and can also save them."
+msgstr ""
+"O MotoCronos é um programa simples e curto, que serve para cronometrar "
+"corridas de motocicletas e bicicletas e também pode salvá-las."
+
+#: templates/base.html:197
+msgid "Agricultural Gross Margin"
+msgstr "Margem bruta agrícola"
+
+#: templates/base.html:198
+msgid ""
+"This system is used to know how profitable is the breeding of a certain "
+"animal or some type of plant, taking into account all the existing variables "
+"that are necessary. This was my thesis."
+msgstr ""
+"Esse sistema é usado para saber quão lucrativa é a criação de um determinado "
+"animal ou algum tipo de planta, levando em conta todas as variáveis "
+"existentes que são necessárias. Essa foi minha tese."
+
+#: templates/base.html:208
+msgid "Kids Management"
+msgstr "Gerenciamento de Crianças"
+
+#: templates/base.html:209
+msgid ""
+"Kids Management is a system program used to register children with all their "
+"data/data of their parents and group them by different types of "
+"characteristics such as names, surnames, age, etc."
+msgstr ""
+"O Gerenciamento de Crianças é um programa de sistema usado para registrar "
+"crianças com todos os seus dados/dados de seus pais e agrupá-las por "
+"diferentes tipos de características, como nomes, sobrenomes, idade, etc."
+
+#: templates/base.html:231
+msgid "Code Lines"
+msgstr "Linhas de código"
+
+#: templates/base.html:239
+msgid "Years of Experience"
+msgstr "Anos de experiência"
+
+#: templates/base.html:248
+msgid "Sleepless nights"
+msgstr "Noites sem dormir"
+
+#: templates/base.html:257
+msgid "Frustrations Overcome"
+msgstr "Frustrações superadas"
+
+#: templates/base.html:284
+msgid "Spanish, English and Portugues"
+msgstr "Espanhol, Inglês e Português"
+
+#: templates/base.html:297
+msgid "Languages I can speak"
+msgstr "Idiomas que posso falar"
+
+#: templates/base.html:298
+msgid ""
+"As an Argentinean I speak <b>Spanish</b> natively, during my adolescence I "
+"studied <b>English</b> (whose language I improved by putting it into "
+"practice in these last 8 months) and during the COVID-19 pandemic I studied "
+"<b>Portuguese</b> for pure pleasure, in which I reached a very good level "
+"although I don't use it too much nowadays."
+msgstr ""
+"Como argentino, falo <b>Espanhol</b> nativamente, durante minha adolescência "
+"estudei <b>Inglês</b> (cujo idioma melhorei colocando-o em prática nesses "
+"últimos 8 meses) e durante a pandemia da COVID-19 estudei <b>Português</b> "
+"por puro prazer, no qual atingi um nível muito bom, embora não o utilize "
+"muito atualmente."
+
+#: templates/base.html:312 templates/base.html:340
+msgid "Programming Languages"
+msgstr "Linguagens de programação"
+
+#: templates/base.html:313
+msgid "Python and Django"
+msgstr "Python e Django"
+
+#: templates/base.html:327
+msgid ""
+"The last year while I was working, in my free time <br>I started to learn "
+"Django by my own. After a month I started my first project, the Kids "
+"Management."
+msgstr ""
+"No ano passado, enquanto eu estava trabalhando, comecei a aprender Django "
+"por conta própria em meu tempo livre. Depois de um mês, iniciei meu primeiro "
+"projeto, o Gerenciamento de Crianças."
+
+#: templates/base.html:355
+msgid ""
+"In my last year of university I learned the concepts of functions, triggers, "
+"etc. which I reinforced much more in the following years when I used them in "
+"real projects."
+msgstr ""
+"Em meu último ano de universidade, aprendi os conceitos de funções, "
+"acionadores, etc., que reforcei muito mais nos anos seguintes, quando os "
+"usei em projetos reais."
+
+#: templates/base.html:369
+msgid "Other knowledges"
+msgstr "Outros conhecimentos"
+
+#: templates/base.html:370
+msgid "ER-Studio, PHP, JS, Java, C, MySQL, Laravel and more."
+msgstr "ER-Studio, PHP, JS, Java, C, MySQL, Laravel e mais."
+
+#: templates/base.html:383
+msgid "Other languages and technologies"
+msgstr "Outras linguagens e tecnologias"
+
+#: templates/base.html:384
+msgid ""
+"During my time as a student I studied and practiced many hours of some of "
+"the technologies and languages mentioned above that I later used as a "
+"freelance developer."
+msgstr ""
+"Durante meu período como estudante, estudei e pratiquei muitas horas de "
+"algumas das tecnologias e linguagens mencionadas acima, que mais tarde usei "
+"como desenvolvedor autônomo"
+
+#: templates/base.html:427
+msgid "Where am I and why?"
+msgstr "¿Onde estou e por quê?"
+
+#: templates/base.html:432
+msgid ""
+"I am currently in Abu Dhabi - U.A.E. working since December 2022 as a "
+"waiter, living a unique experience, very fruitful on a personal and "
+"professional level as I am learning how to deal with people developing my "
+"soft skills, also making friends and contacts, basically getting out of my "
+"comfort zone from which it is always difficult to leave."
+msgstr ""
+"Atualmente estou em Abu Dhabi - U.A.E. trabalhando desde dezembro de 2022 "
+"como garçom, vivendo uma experiência única, muito proveitosa em nível "
+"pessoal e profissional, pois estou aprendendo a lidar com as pessoas, "
+"desenvolvendo minhas soft skills, também fazendo amigos e contatos, "
+"basicamente saindo da minha zona de conforto da qual é sempre difícil sair."
+
+#: templates/base.html:440
+msgid "How can I contribute to the company?"
+msgstr "¿Como posso contribuir para a empresa?"
+
+#: templates/base.html:445
+msgid ""
+"I could contribute with my proactivity, seeing what is needed before it is "
+"needed, provide all my knowledge and what I don't know, learn it quickly "
+"either by my own means or in my team, keep learning on my own and update "
+"myself as it is something I do regularly and not get stuck when getting a "
+"job, help my colleagues and always think about growing within the company. "
+"<br> And of course, all my commitment and responsibility to do the "
+"designated work within the agreed time."
+msgstr ""
+"Eu poderia contribuir com minha proatividade, vendo o que é necessário antes "
+"que seja necessário, fornecendo todo o meu conhecimento e o que não sei, "
+"aprendendo rapidamente por mim mesmo ou com minha equipe, continuando a "
+"aprender por conta própria e me atualizando, pois é algo que faço "
+"regularmente e não fico preso ao conseguir um emprego, ajudo meus colegas e "
+"sempre penso em crescer dentro da empresa. <br> E, é claro, todo o meu "
+"comprometimento e responsabilidade para realizar o trabalho designado dentro "
+"do prazo acordado."
+
+#: templates/base.html:453
+msgid "Brief story about Me"
+msgstr "Breve história sobre mim"
+
+#: templates/base.html:458
+msgid ""
+"I was born and raised in Salta, north of Argentina 32 years ago, I was one "
+"of the few people who grew up with a computer in the 90's in my country, so "
+"I discovered programming (without knowing I was programming) creating and "
+"editing characters of the game Earth's Special Forces (a Counter Strike's "
+"mod of Dragon Ball Z) at about 14 years old and from then on I never "
+"stopped, although I took some breaks to work on other things, because in my "
+"country there are not many opportunities as a programmer."
+msgstr ""
+"Nasci e cresci em Salta, no norte da Argentina, há 32 anos, e fui uma das "
+"poucas pessoas que cresceram com um computador na década de 90 em meu país, "
+"então descobri a programação (sem saber que estava programando) criando e "
+"editando personagens do jogo Earth's Special Forces (um mod de Counter "
+"Strike mod de Counter Strike de Dragon Ball Z) com cerca de 14 anos e, a "
+"partir daí, nunca mais nunca parei, embora tenha feito algumas pausas para "
+"trabalhar em outras coisas, porque em meu não há muitas oportunidades como "
+"programador."
+
+#: templates/base.html:466
+msgid "Where did I work before?"
+msgstr "¿Onde eu trabalhei antes?"
+
+#: templates/base.html:471
+msgid ""
+"I worked as an IT support intern for 18 months at 'Conectar Igualdad', as a "
+"freelance software developer for 3 years and finally as a remote technical "
+"support in the most famous internet company in Argentina for almost 3 years "
+"before coming to the UAE."
+msgstr ""
+"Trabalhei como estagiário de suporte de TI por 18 meses no programa "
+"'Conectar Igualdad', como desenvolvedor de software freelancer por 3 anos e, "
+"finalmente, como suporte técnico remoto na empresa de Internet mais famosa "
+"da Argentina por quase 3 anos antes de vir para os Emirados Árabes Unidos."
+
+#: templates/base.html:635
+msgid "Contact me"
+msgstr "Entre em contato"
+
+#: templates/base.html:657
+msgid "Enter your name*"
+msgstr "Digite seu nome*"
+
+#: templates/base.html:663
+msgid "Enter your email*"
+msgstr "Digite seu e-mail*"
+
+#: templates/base.html:669
+msgid "Subject"
+msgstr "Assunto"
+
+#: templates/base.html:675
+msgid "Enter your message"
+msgstr "Digite sua mensagem"
+
+#: templates/base.html:683
+msgid "Send Message"
+msgstr "Enviar"
+
+#: templates/base.html:703
+msgid "Thanks for visiting my website."
+msgstr "Obrigado por visitar meu site."
+
+#: templates/base.html:773
+msgid "Coded by Matias Exequiel Yurquina"
+msgstr "Codificado por Matias Exequiel Yurquina"

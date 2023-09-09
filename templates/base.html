@@ -1,0 +1,674 @@
+    {% load static %}
+    {% load i18n %}
+
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <title>{% trans 'Home - Portfolio' %}</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="" />
+            <meta name="keywords" content="" />
+            <meta content="" name="author" />
+
+            <!-- fevicon -->
+            <link rel="shortcut icon" href="{% static 'images/icon.png' %}">
+            
+            <!-- Bootstrap css -->
+
+            <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css" />
+
+            <!-- animation -->
+            <link rel="stylesheet" href="{% static 'css/aos.css' %}" />
+
+            <!-- slider -->
+            <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}" />
+
+            <!-- Icon -->
+            <link rel="stylesheet" href="{% static 'css/materialdesignicons.min.css' %}" type="text/css" />
+
+            <link rel="stylesheet" href="{% static 'css/boxicons.min.css' %}" type="text/css" />
+
+            <!-- css -->
+            <link rel="stylesheet" href="{% static 'css/style.min.css' %}" type="text/css" />
+
+
+        </head>
+        
+        <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="71">
+
+            <nav class="navbar navbar-expand-lg fixed-top navbar-custom nav-light sticky" id="navbar">
+                <div class="container">
+                    <!-- LOGO -->
+                    
+                    <a class="navbar-brand text-uppercase" href="/">
+                        <img class="logo-dark" src="{% static 'images/mey-black.png' %}" alt="" height="24">
+                        <img class="logo-light" src="{% static 'images/mey-white.png' %}" alt="" height="24">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="mdi mdi-menu"></span>
+                        <!-- toggle button -->
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav" id="navbar-navlist">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#home">{% trans 'Home' %}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects">{% trans 'Projects' %}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#team">{% trans 'Languages' %}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#aboutme">{% trans 'About Me' %}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mb-3 mb-lg-0" href="#contact">{% trans 'Contact' %}</a>
+                            </li>
+                    </ul>
+                    <br>
+                    
+                    <select name="lang" id="lang">
+                    {% if lang == 'es' %}
+                        <option value="0">English</option>
+                        <option selected value="1">Español</option>
+                        <option value="2">Português</option>
+                    {% elif lang == 'pt' %}
+                        <option value="0">English</option>
+                        <option value="1">Español</option>
+                        <option selected value="2">Português</option>
+                    {% else %}
+                        <option selected value="0">English</option>
+                        <option value="1">Español</option>
+                        <option value="2">Português</option>
+                    {% endif %}
+                    </select>
+                    <!-- Button trigger modal -->
+                    <!-- <button type="button" class="btn btn-primary nav-btn" data-bs-toggle="modal" data-bs-target="#exampleModalLong">
+                        Sign Up
+                    </button> -->
+                    <!-- Nav btn -->
+                </div>
+            </div><!-- End container -->
+        </nav>
+        <!-- End Navbar -->
+        
+
+        <!--START Hero-->
+        <section class="section home home-3" id="home">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="text-center">
+                            <h1 class="text-uppercase text-white" >{% trans 'Matias Yurquina - Web Developer' %}</h1>
+                            <p class="mt-3 text-white">{% trans 'Programmer with studies at the National University of Tucuman - Argentina, with real experience in web development, Visual Basic, PostgreSQL database and more.' %}</p>
+                            <div class="home-btn">
+                                
+                            </div>
+                        </div>
+                    </div><!-- end col --> 
+                    <div class="col-lg-7">
+                        <div class="home-img">
+                            <img class="img-fluid" src="{% static 'images/home-pc.png' %}" alt="">
+                        </div>
+                    </div>
+                </div><!-- end row -->
+            </div>
+            <!--end container-->
+        </section>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="home-shape-arrow">
+                    <a href="#project" class="mouse-down">
+                        <svg class="arrows">
+							<path class="a1" d="M0 0 L25 22 L50 0"></path>
+							<path class="a2" d="M0 15 L25 40 L50 15"></path>
+							<path class="a3" d="M0 30 L25 54 L50 30"></path>
+						</svg>
+                    </a>
+                </div>
+            </div><!--end row-->
+        </div><!--end container-->
+        <!--END home -->
+
+        <!--start service-->
+        <section class="section service-2" id="projects">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="text-center">
+                            <div class="heading">
+                                <h2 class="mb-0">{% trans 'Projects' %}</h2>
+                                <div class="box first">
+                                </div>
+                            </div>
+                            <p class="text-muted">{% trans 'Brief overview of the projects I participated in' %}</p>
+                        </div>
+                    </div>
+                    <!--end col-->
+                </div><!--end row-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="process-box card border-0 mt-5">
+                                    <div class="process-icon flex-shrink-0 me-3">
+                                        <i class="mdi mdi-lightning-bolt"></i>
+                                    </div>
+                                    <div>
+                                        <h5> <a href="https://bingos.pythonanywhere.com/" target="_blank">{% trans 'Bingo Control' %}</a> </h5>
+                                        <p class="mt-2 mb-0 text-muted">{% trans 'This is a program made entirely by me, as its name indicates this small program is used to control if a bingo is ready to play or not.' %}</p>
+                                    </div>
+                                </div><!--end process-box-->
+                            </div><!--end col-->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="process-box card border-0 mt-5">
+                                    <div class="process-icon flex-shrink-0 me-3">
+                                        <i class="mdi mdi-lightning-bolt"></i>
+                                    </div>
+                                    <div>
+                                        <h5>{% trans 'Student Management System' %}</h5>
+                                        <p class="mt-2 mb-0 text-muted">{% trans 'This system is used to control the academic status of each student, to register for exams, to register for subjects, etc.' %} </p>
+                                    </div>
+                                </div><!--end process-box-->
+                            </div><!--end col-->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="process-box card border-0 mt-5">
+                                    <div class="process-icon flex-shrink-0 me-3">
+                                        <i class="mdi mdi-lightning-bolt"></i>
+                                    </div>
+                                    <div>
+                                        <h5>{% trans 'MotoCronos' %}</h5>
+                                        <p class="mt-2 mb-0 text-muted">{% trans 'MotoCronos is a simple and short program, which serves to time motorcycle and bicycle races and can also save them.' %} </p>
+                                    </div>
+                                </div><!--end process-box-->
+                            </div><!--end col-->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="process-box card border-0 mt-5">
+                                    <div class="process-icon flex-shrink-0 me-3">
+                                        <i class="mdi mdi-lightning-bolt"></i>
+                                    </div>
+                                    <div>
+                                        <h5>{% trans 'Agricultural Gross Margin' %}</h5>
+                                        <p class="mt-2 mb-0 text-muted">{% trans 'This system is used to know how profitable is the breeding of a certain animal or some type of plant, taking into account all the existing variables that are necessary. This was my thesis.' %} </p>
+                                    </div>
+                                </div><!--end process-box-->
+                            </div><!--end col-->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="process-box card border-0 mt-5">
+                                    <div class="process-icon flex-shrink-0 me-3">
+                                        <i class="mdi mdi-lightning-bolt"></i>
+                                    </div>
+                                    <div>
+                                        <h5><a href="https://hospitalsaravia.pythonanywhere.com/login/" target="_blank">{% trans 'Kids Management' %}</a></h5>
+                                        <p class="mt-2 mb-0 text-muted">{% trans 'Kids Management is a system program used to register children with all their data/data of their parents and group them by different types of characteristics such as names, surnames, age, etc.' %} </p>
+                                    </div>
+                                </div><!--end process-box-->
+                            </div><!--end col-->
+                        </div><!--end row-->
+                    </div>
+                </div>
+            </div><!--end container-->
+        </section>
+        <!--end service-->
+
+        <!-- start cta -->
+        <section class="section cta-2">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="mt-5 text-center">
+                            <h1 class="cta-heading">
+                                <span class="counter_value" data-target="3700">0</span>
+                                <span>k</span>
+                            </h1>
+                            <p class="cta-text">{% trans 'Code Lines' %}</p>
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-3 col-md-4">
+                        <div class="mt-5 text-center">
+                            <h1 class="cta-heading">
+                                <span class="counter_value" data-target="3">3</span>
+                            </h1>
+                            <p class="cta-text">{% trans 'Years of Experience' %}</p>
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-3 col-md-4">
+                        <div class="mt-5 text-center">
+                            <h1 class="cta-heading">
+                                <span class="counter_value" data-target="1905">0</span>
+                                <span></span>
+                            </h1>
+                            <p class="cta-text">{% trans 'Sleepless nights' %}</p>
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-3 col-md-4">
+                        <div class="mt-5 text-center">
+                            <h1 class="cta-heading">
+                                <span class="counter_value" data-target="6598">0</span>
+                                <span></span>
+                            </h1>
+                            <p class="cta-text">{% trans 'Frustrations Overcome' %}</p>
+                        </div>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section>
+        <!-- end cta -->
+        
+        <!-- Start Team -->
+        <section class="section team" id="team">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="heading mb-3">
+                            <h2 class="mb-0">{% trans 'Languages' %}</h2>
+                            <div class="box first">
+                            </div>
+                        </div>
+                        <div class="swiper mySwiper6">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                  <div class="row">
+                                      <div class="col-lg-5 col-md-6">
+                                          <div class="team-img">
+                                            <img class="img-fluid" src="{% static 'images/langs.png' %}" alt="">
+                                            <div class="img-text">
+                                                <h6>{% trans 'Languages' %}</h6>
+                                                <span class="text-white-50">{% trans 'Spanish, English and Portugues' %}</span>
+                                            </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-7 col-md-6">
+                                          <div class="card h-100">
+                                            <div class="team-heading">
+                                                <div data-aos="fade-left" data-aos-duration="2000">
+                                                    <h6></h6>
+                                                </div>
+                                            </div>
+                                              <div class="card-body">
+                                                  <div class="card-text">
+                                                    <h6>{% trans 'Languages I can speak' %}</h6>
+                                                    <p class="text-muted">{% trans "As an Argentinean I speak <b>Spanish</b> natively, during my adolescence I studied <b>English</b> (whose language I improved by putting it into practice in these last 8 months) and during the COVID-19 pandemic I studied <b>Portuguese</b> for pure pleasure, in which I reached a very good level although I don't use it too much nowadays." %}</p>
+                                                  </div>
+                                                  
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-6">
+                                        <div class="team-img">
+                                          <img class="img-fluid" src="{% static 'images/django-rect.png' %}" alt="">
+                                          <div class="img-text">
+                                              <h6>{% trans 'Programming Languages' %}</h6>
+                                              <span class="text-white-50">{% trans 'Python and Django' %}</span>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 col-md-6">
+                                        <div class="card h-100">
+                                          <div class="team-heading">
+                                              <div data-aos="fade-left" data-aos-duration="2000">
+                                                  <h6>  </h6>
+                                              </div>
+                                          </div>
+                                            <div class="card-body">
+                                                <div class="card-text">
+                                                  <h6>Python & Django Framework</h6>
+                                                  <p class="text-muted">{% trans 'The last year while I was working, in my free time <br>I started to learn Django by my own. After a month I started my first project, the Kids Management.' %}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-6">
+                                        <div class="team-img">
+                                          <img class="img-fluid" src="{% static 'images/postgres-rect.png' %}" alt="">
+                                          <div class="img-text">
+                                              <h6>{% trans 'Programming Languages' %}</h6>
+                                              <span class="text-white-50">PostgreSQL</span>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 col-md-6">
+                                        <div class="card h-100">
+                                          <div class="team-heading">
+                                              <div data-aos="fade-left" data-aos-duration="2000">
+                                                  <h6></h6>
+                                              </div>
+                                          </div>
+                                            <div class="card-body">
+                                                <div class="card-text">
+                                                  <h6>PostgreSQL</h6>
+                                                  <p class="text-muted">{% trans "In my last year of university I learned the concepts of functions, triggers, etc. which I reinforced much more in the following years when I used them in real projects." %}</p>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-6">
+                                        <div class="team-img">
+                                          <img class="img-fluid" src="{% static 'images/otros.png' %}" alt="">
+                                          <div class="img-text">
+                                              <h6>{% trans "Other knowledges" %}</h6>
+                                              <span class="text-white-50">{% trans "ER-Studio, PHP, JS, Java, C, MySQL, Laravel and more." %}
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 col-md-6">
+                                        <div class="card h-100">
+                                          <div class="team-heading">
+                                              <div data-aos="fade-left" data-aos-duration="2000">
+                                                  <h6></h6>
+                                              </div>
+                                          </div>
+                                            <div class="card-body">
+                                                <div class="card-text">
+                                                  <h6>{% trans 'Other languages and technologies' %}</h6>
+                                                  <p class="text-muted">{% trans "During my time as a student I studied and practiced many hours of some of the technologies and languages mentioned above that I later used as a freelance developer." %}</p>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div><!-- swiper-wrapper -->
+                        </div><!-- end swiper -->
+                    </div><!--col end-->
+                </div><!--row end-->
+            </div>
+        </section>
+        <!-- End Team -->
+        
+        <!--Aboutme-->
+        <section class="section faqs-2" id="aboutme">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="text-center">
+                            <div class="heading">
+                                <h2 class="mb-0">{% trans 'About Me' %}</h2>
+                                <div class="box first">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-lg-9">
+                        <ul class="nav nav-tabs nav-tabs-custom nav-justified justify-content-center faq-tab-box" id="pills-tab" role="tablist">
+
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade active show" id="pills-genarel" role="tabpanel" aria-labelledby="pills-genarel-tab">
+                                <div class="accordion" id="accordionExampleONE">
+                                    <div class="accordion-item">
+                                      <div class="accordion-header" id="headingOne1">
+                                        <a href="#collapseOne1" class="accordion-button" data-bs-toggle="collapse" 
+                                        aria-expanded="true" aria-controls="collapseOne1">
+                                            <h6> <span>1.</span> {% trans 'Where am I and why?' %}</h6>
+                                        </a>
+                                      </div>
+                                      <div id="collapseOne1" class="accordion-collapse collapse show" aria-labelledby="headingOne1" data-bs-parent="#accordionExampleONE">
+                                        <div class="accordion-body">
+                                            <p class="text-muted">{% trans 'I am currently in Abu Dhabi - U.A.E. working since December 2022 as a waiter, living a unique experience, very fruitful on a personal and professional level as I am learning how to deal with people developing my soft skills, also making friends and contacts, basically getting out of my comfort zone from which it is always difficult to leave.' %} </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <div class="accordion-header" id="headingTwo2">
+                                        <a href="#collapseTwo2" class="accordion-button collapsed" data-bs-toggle="collapse" 
+                                        aria-expanded="false" aria-controls="collapseTwo2">
+                                        <h6> <span>2.</span>{% trans 'How can I contribute to the company?' %}</h6>
+                                        </a>
+                                      </div>
+                                      <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p class="text-muted"> {% trans "I could contribute with my proactivity, seeing what is needed before it is needed, provide all my knowledge and what I don't know, learn it quickly either by my own means or in my team, keep learning on my own and update myself as it is something I do regularly and not get stuck when getting a job, help my colleagues and always think about growing within the company. <br> And of course, all my commitment and responsibility to do the designated work within the agreed time." %}</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <div class="accordion-header" id="headingThree3">
+                                        <a href="#collapseThree3" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        aria-expanded="false" aria-controls="collapseThree3">
+                                        <h6> <span>3.</span>{% trans "Brief story about Me" %}</h6>
+                                        </a>
+                                      </div>
+                                      <div id="collapseThree3" class="accordion-collapse collapse" aria-labelledby="headingThree3" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p class="text-muted">{% trans "I was born and raised in Salta, north of Argentina 32 years ago, I was one of the few people who grew up with a computer in the 90's in my country, so I discovered programming (without knowing I was programming) creating and editing characters of the game Earth's Special Forces (a Counter Strike's mod of Dragon Ball Z) at about 14 years old and from then on I never stopped, although I took some breaks to work on other things, because in my country there are not many opportunities as a programmer." %}</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" id="headingfour4">
+                                          <a href="#collapsefour4" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                          aria-expanded="false" aria-controls="collapsefour4">
+                                          <h6> <span>4.</span>{% trans "Where did I work before?" %}</h6>
+                                          </a>
+                                        </div>
+                                        <div id="collapsefour4" class="accordion-collapse collapse" aria-labelledby="headingfour4" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                              <p class="text-muted">{% trans "I worked as an IT support intern for 18 months at 'Conectar Igualdad', as a freelance software developer for 3 years and finally as a remote technical support in the most famous internet company in Argentina for almost 3 years before coming to the UAE." %}</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div><!-- end container -->
+        </section>
+        <!-- End faqs -->
+
+        
+
+        <!-- Start contact -->
+        <section class="section contact" id="contact">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-9">
+                        <div class="row align-items-center gy-3">
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <div class="social-list">
+                                            <h6 class="mb-0"></h6>
+                                            <h3 class="fw-semibold">{% trans 'Contact me' %}</h3>
+                                            <div class="d-sm-flex card-text">
+                                                <p class="me-4 mb-0">What's App</p>
+                                                <a class="text-white" href="javascript:void(0)"><i class="mdi mdi-phone-outline me-2"></i>+543815980702</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--CONTACT-->
+                            <!--end col-->
+                            <div class="col-lg-6">
+                                <!--Success Message-->
+                                <h3 style="color: green;">{{msg}}</h3>
+
+                                <form action="{% if lang == 'en' %}/#contact{% else %}/{{lang}}/#contact{% endif %}" method="post" class="contact-form" name="myForm" id="myForm">
+                                    {% csrf_token %}
+                                    <span id="error-msg"></span>
+                                    <div class="row rounded-3 py-3">
+                                        <div class="col-lg-12">
+                                            <div class="position-relative mb-3">
+                                                <span class="input-group-text"><i class="mdi mdi-account-outline"></i></span>
+                                                <input required id="name" name="name" type="text" class="form-control" placeholder="{% trans 'Enter your name*' %}">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="position-relative mb-3">
+                                                <span class="input-group-text"><i class="mdi mdi-email-outline"></i></span>
+                                                <input required id="mail" name="mail" type="email" class="form-control" placeholder="{% trans 'Enter your email*' %}">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="position-relative mb-3">
+                                                <span class="input-group-text"><i class="mdi mdi-file-document-outline"></i></span>
+                                                <input required id="subject" name="subject" type="text" class="form-control" placeholder="{% trans 'Subject' %}">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="position-relative mb-3">
+                                            <span class="input-group-text align-items-start"><i class="mdi mdi-comment-text-outline"></i></span>
+                                                <textarea required id="message" name="message" rows="4" class="form-control" placeholder="{% trans 'Enter your message' %}*"></textarea>
+                                            </div>
+                                            
+                                        </div>                                    
+                                                {{form.captcha}}
+
+                                        <div class="col-lg-12">
+                                            <div class="text-end">
+                                                <input type="submit" id="submit" name="send" class="btn btn-primary" value="{% trans 'Send Message' %}">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!--end form-->
+                            </div><!--end col-->
+                        </div><!--end row-->
+                    </div>
+                </div>
+            </div><!--end container-->
+        </section>
+        <!-- End contact -->
+
+        <!-- START FOOTER -->
+        <footer class="section footer">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-sm-10 text-center">
+                        <a href="javascript:void(0)"><img src="{% static 'images/mey-black.png' %}" height="30" alt=""></a>
+                        <p class="mx-auto mt-sm-4">{% trans "Thanks for visiting my website." %}</p>
+                        <ul class="list-unstyled mb-0 mt-3 social-icon">
+                            <li class="list-inline-item">
+                                <div data-aos="fade-up" data-aos-duration="800">
+                                    <div class="icon-text">
+                                        <div class="icon" onclick="link('li')" >
+                                            <div class="tooltip" onclick="link('li')">LinkedIn</div>
+                                            <span><i class="mdi mdi-linkedin"></i></span>
+                                          </div>
+                                    </div>
+                                </div>
+                            </li>
+            
+                            <li class="list-inline-item">
+                                <div data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="icon-text">
+                                        <div class="icon github" onclick="link('git')">
+                                            <div class="tooltip" onclick="link('git')">Github</div>
+                                            <span><i class="mdi mdi-github"></i></span>
+                                          </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                
+            </div><!--end container-->
+        </footer>
+        <!-- END FOOTER -->
+
+    
+
+        <!-- FOOTER-ALT -->
+        <div class="footer-alt pt-4 pb-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center">
+                            <p class="mb-0 fs-15">©
+                                <script>document.write(new Date().getFullYear())</script> {% trans 'Coded by Matias Exequiel Yurquina' %}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END FOOTER-ALT -->
+
+<!--{% static '' %}-->
+        <!--start back-to-top-->
+        <button onclick="topFunction()" id="back-to-top">
+            <i class="mdi mdi-arrow-up"></i>
+        </button>
+        <!--end back-to-top-->
+
+        <!--Custom js-->
+        <script src="{% static 'js/counter.js' %}"></script>
+
+        <!--Bootstrap Js-->
+        <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+
+        <!-- animation -->
+        <script src="{% static 'js/aos.js' %}"></script>
+
+        <!-- swiper js -->
+        <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+
+        <!-- contact -->
+        <script src="{% static 'js/contact.js' %}"></script>
+
+        <!-- App Js -->
+        <script src="{% static 'js/app.js' %}"></script>
+        <script >
+            var select = document.getElementById("lang");
+            
+            select.addEventListener("change", function(){
+                var selectedOption = this.options[this.selectedIndex];
+
+                if (selectedOption.value == 1)
+                    window.location.href = "/es";
+                else if(selectedOption.value == 2)
+                    window.location.href = "/pt";
+                else if(selectedOption.value == 0)
+                    window.location.href = "/";
+            });
+        </script>
+        <script>
+
+            function link(socialMedia){
+                if(socialMedia=='li'){
+                    window.open("https://www.linkedin.com/in/matiasyurquina/", "_blank");
+                }else if(socialMedia=='git'){
+                    window.open("https://github.com/matiasyurquina/", "_blank");
+                }
+            }
+        </script>
+
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+
+        <script>
+            function onSubmit(token) {
+                document.getElementById("demo-form").submit();
+            }
+        </script>
+
+    </body>
+</html>

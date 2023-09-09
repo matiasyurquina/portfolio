@@ -1,0 +1,26 @@
+<form method="post">
+    {% csrf_token %}
+    <!--
+    <label name="idLabelName" for="name"> Name: {{form.name}}</label><br><br>
+    <label name="idLabelMail" for="mail"> E-Mail: {{form.mail}}</label><br><br>
+    <label name="idLabelSubject" for="subject"> Subject: {{form.subject}}</label><br><br>
+    <label name="idLabelMessage" for="message"> Message:<br> {{form.message}}</label><br><br>
+    {{form.captcha}}
+-->
+    <input type="text" id="name" name="name" ><br><br>
+    <input type="mail" id="mail" name="mail" ><br><br>
+    <input type="text" id="subject" name="subject" ><br><br>
+    <input type="text" id="message" name="message" ><br><br>
+    {{form.captcha}}
+    
+    <button type="submit">Guardar</button>
+  </form>
+
+
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+
+  <script>
+    function onSubmit(token) {
+      document.getElementById("demo-form").submit();
+    }
+  </script>
